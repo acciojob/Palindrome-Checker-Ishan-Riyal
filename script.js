@@ -2,7 +2,7 @@
 
 function palindrome(str){
  const reverse = str.split('').reverse().join('');
- return str === reverse ? true : false;
+ return str.toLowerCase() === reverse.toLowerCase() ? true : false;
 }
 
 module.exports = palindrome
